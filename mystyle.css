@@ -1,0 +1,28 @@
+#p1-night{
+    background-color: black;
+    color: yellow;
+}
+
+body{
+    background-color: lightblue;
+}
+
+#p1-light{
+    background-color: white;
+}
+
+.first-word{
+    font-size:30px;
+}
+
+div{
+    font-family:'Lucida Sans'
+    font: size 20px;
+
+    margin: 20px;
+    border: 5px solid red;
+    padding: 50px;
+    
+    width: 550px;
+    height: 500px;
+}
