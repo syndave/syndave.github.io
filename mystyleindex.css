@@ -35,7 +35,53 @@ html {
     /* You can also use background-image, background-repeat, background-size, etc. for more advanced backgrounds */
 }
 
-title {
-justify-content: center;
-font-size: larger;
+.title {
+    text-align: center; /* Center the text horizontally */
+}
+
+
+.image-container {
+    text-align: center; /* Aligns the content (the image) horizontally within the container */
+}
+
+.image-container img {
+    display: inline-block; /* Ensures the image behaves like an inline element */
+    /* You can set max-width, max-height, or other properties for the image */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Add a transition for smooth opacity change */
+}
+
+.fade {
+    animation: fade 6s infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Adjust background color as needed */
+    color: #fff; /* Adjust text color as needed */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
 }
