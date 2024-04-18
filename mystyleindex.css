@@ -10,6 +10,12 @@ nav {
     justify-content: center;
 }
 
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .navigation li {
     margin-right: 10px; /* Add spacing between navigation items */
 }
