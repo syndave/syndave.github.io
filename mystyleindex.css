@@ -1,0 +1,24 @@
+nav {
+    background-color: #f4f4f4; /* Background color for navigation */
+}
+
+.navigation {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox layout */
+}
+
+.navigation li {
+    margin-right: 10px; /* Add spacing between navigation items */
+}
+
+.navigation a {
+    padding: 10px; /* Add padding for spacing */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set link color */
+}
+
+.navigation a:hover {
+    background-color: lightgray; /* Change background color on hover */
+}
