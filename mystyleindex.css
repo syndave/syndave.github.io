@@ -1,5 +1,5 @@
 nav {
-    background-color: #f4f4f4; /* Background color for navigation */
+    background-color: #eeb90d; /* Background color for navigation */
 }
 
 .navigation {
@@ -7,6 +7,7 @@ nav {
     margin: 0;
     padding: 0;
     display: flex; /* Use flexbox layout */
+    justify-content: center;
 }
 
 .navigation li {
