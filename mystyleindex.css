@@ -168,3 +168,21 @@ p {
     background-color: #0056b3; /* Darker color on hover */
   }
   
+  /* Stacked photos container */
+.photo-stack {
+    width: 100%; /* Ensure photos fill the container */
+  }
+  
+  /* Individual photos */
+  .team,
+  .who {
+    display: block; /* Stack photos on top of each other */
+    margin-bottom: 20px; /* Adjust margin between photos */
+  }
+  
+  /* Adjust width of photos if needed */
+  .team img,
+  .who img {
+    width: 100%; /* Make photos fill the container horizontally */
+  }
+  
