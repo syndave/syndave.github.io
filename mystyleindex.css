@@ -185,3 +185,18 @@ p {
 .who img {
   width: 100%; /* Make photos fill the container horizontally */
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    /* Optionally, set max-width to prevent image overflow */
+    max-width: 300%;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
