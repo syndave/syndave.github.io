@@ -51,8 +51,8 @@ html {
 
 .slideshow-container {
     position: relative;
-    max-width: 1000px; /* Adjust as needed */
-    margin: auto;
+    margin: 0 auto; /* Horizontally center the container */
+    max-width: 800px; /* Set max-width to prevent overlapping */
 }
 
 .slide {
@@ -75,8 +75,40 @@ html {
     100% { opacity: 0; }
 }
 
+/* Tile showcase container */
+.tile-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr)); /* Adjust tile size as needed */
+    gap: 10px; /* Adjust gap between tiles */
+  }
+  
+  /* Individual tiles (images) */
+  .tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Adjust border radius as needed */
+  }
+  
+  /* Images within tiles */
+  .tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Add hover effect */
+  }
+  
+  /* Enlarged image */
+  .tile.enlarged img {
+    transform: scale(1.2); /* Enlarge the image */
+  }
+  
+  /* Hover effect */
+  .tile:hover img {
+    transform: scale(1.05);
+  }
+  
+
 .footer {
-    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -84,6 +116,7 @@ html {
     color: #fff; /* Adjust text color as needed */
     padding: 20px; /* Adjust padding as needed */
     text-align: center;
+    margin-top: 20px; /* Ensure space between tiles and footer */
 }
 
 body {
@@ -110,3 +143,28 @@ p {
     font-size: 18px;
     line-height: 1.6;
 }
+
+/* Center container */
+.center-container {
+    display: flex;
+    justify-content: center;
+  }
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove default link underline */
+    font-size: 16px;
+  }
+  
+  /* Button hover effect */
+  .button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
