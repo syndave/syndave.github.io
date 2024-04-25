@@ -12,6 +12,11 @@
                     <nav>
                     <ul class="navigation">
                         <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
                             <a href="our-services.html">
                                 Our Services
                             </a>
@@ -49,37 +54,44 @@
                 <section>
                     <div class="tile-showcase">
                         <div class="tile">
-                            <img width="1000" height="1000" src="images/Portfolio2.JPG" alt="image 1"/>
+                            <img width="2000" height="2000" src="images/Portfolio2.JPG" alt="image 2" class="thumbnail" onclick="openModal"/>
                         </div>
                         <div class="tile">
-                            <img width="1000" height="1000" src="images/Portfolio1.JPG" alt="image 2"/>
+                            <img width="1000" height="1000" src="images/Portfolio1.JPG" alt="image 1" class="thumbnail" onclick="openModal"/>
                         </div>
                         <div class="tile">
-                            <img width="1000" height="1000" src="images/Portfolio4.JPG" alt="image 3"/>
+                            <img width="1000" height="1000" src="images/Portfolio4.JPG" alt="image 4" class="thumbnail" onclick="openModal"/>
                         </div>
                         <div class="tile">
-                            <img width="1000" height="1000" src="images/Portfolio3.JPG" alt="image 3"/>
+                            <img width="1000" height="1000" src="images/Portfolio3.JPG" alt="image 3" class="thumbnail" onclick="openModal"/>
                         </div>
                         <div class="tile">
-                            <img width="1000" height="1000" src="images/Portfolio5.JPG" alt="image 3"/>
+                            <img width="1000" height="1000" src="images/Portfolio5.JPG" alt="image 5" class="thumbnail" onclick="openModal"/>
                         </div>
                         <div class="tile">
-                            <img width="1000" height="1000" src="images/Portfolio6.JPG" alt="image 3"/>
+                            <img width="1000" height="1000" src="images/Portfolio6.JPG" alt="image 6" class="thumbnail" onclick="openModal"/>
                         </div>
                         <div class="tile">
-                            <img width="1000" height="1000" src="images/Portfolio7.JPG" alt="image 3"/>
+                            <img width="1000" height="1000" src="images/Portfolio7.JPG" alt="image 7" class="thumbnail" onclick="openModal"/>
                         </div>
                         <div class="tile">
-                            <img width="1000" height="1000" src="images/Portfolio8.JPG" alt="image 3"/>
+                            <img width="1000" height="1000" src="images/Portfolio8.JPG" alt="image 8" class="thumbnail" onclick="openModal"/>
                         </div>
                         <!-- Add more slides as needed -->
                     </div>
+                    
                     <!-- JavaScript for enlarging photos -->
                     <script>
                      function enlargePhoto(tile) {
                      tile.classList.toggle('enlarged');
                      }
-      </script>
+                    </script>
+                    <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImg">
+                      </div>
+                       <!--For Enlarge of photo-->
+                      <script src="script.js"></script>
             </section>
         </main>
         <footer class="footer">
