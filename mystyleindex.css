@@ -80,6 +80,8 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr)); /* Adjust tile size as needed */
     gap: 10px; /* Adjust gap between tiles */
+    display: flex;
+    justify-content: center;
   }
   
   /* Individual tiles (images) */
@@ -119,8 +121,20 @@ html {
     margin-top: 20px; /* Ensure space between tiles and footer */
 }
 
+.footer-contact-us {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Adjust background color as needed */
+    color: #fff; /* Adjust text color as needed */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    margin-top: 20px; /* Ensure space between tiles and footer */
+    position:absolute;
+}
+
 body {
-    background-image: url('images/background.jpg'); /* Path to your background image */
+    background-image: url('images/Background2.jpg'); /* Path to your background image */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the background image */
     color: #fff; /* White text color */
@@ -186,17 +200,17 @@ p {
   width: 100%; /* Make photos fill the container horizontally */
 }
 
-.container {
+.container1 {
     display: flex;
     justify-content: center;
 }
 
-.container img {
+.container1 img {
     /* Optionally, set max-width to prevent image overflow */
-    max-width: 300%;
+    max-width: 200%;
 }
 
-.container {
+.container1 {
     display: grid;
     place-items: center;
 }
