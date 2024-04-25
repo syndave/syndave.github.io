@@ -270,4 +270,34 @@ p {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .social-media-buttons {
+    margin: 20px 0;
+}
+
+.social-media-buttons a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between buttons */
+}
+
+.social-media-buttons img {
+    width: 40px; /* Adjust the size of the buttons */
+    height: auto;
+}
+
+.social-media-buttons {
+    margin: 20px auto; /* Center the buttons horizontally */
+    text-align: center; /* Center the buttons themselves */
+}
+
+.social-media-buttons a {
+    display: inline-block;
+    margin: 0 15px; /* Adjust spacing between buttons */
+}
+
+.social-media-buttons img {
+    width: 80px; /* Adjust the size of the buttons */
+    height: auto;
+}
+
   
